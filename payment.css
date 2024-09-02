@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+ font-family: "Fredoka", sans-serif;
+ font-style: normal;
+ 
+}
+
+body{
+    font-family:"Fredoka", sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 618px;
+    margin: 0 auto;
+    background-color:white;
+    box-sizing: border-box;
+    padding-top: 1px;
+   
+}
+
+.wrapper{
+    width: 960px;
+    height: 500px;
+    /*background-color:blue;*/
+    margin:30px auto;
+   
+}
+
+.previousPage-wrapper{
+
+    /*background-color: #A6D38D;*/
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.previousPage-wrapper .arrow-icon{
+    width: 27px;
+    height: 25px;
+    /*background-color: #d2d22b;*/
+    background-image: url("images/Group 44.svg");
+    background-position: 154px 977px;
+    background-size: 93px;
+    transform: rotate(180deg);
+}
+
+.previousPage-wrapper a{
+    text-decoration: none;
+    color: #0B1E1D;
+    margin-left: 20px;
+    font-size: 22.5px;
+    font-weight: 400;
+}
+.previousPage-wrapper:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset:0.2em;
+    text-decoration-thickness: 0.05em;
+    color:#0B1E1D;
+}
+
+.payment-wrapper{
+    width: 900px;
+    height: 480px ;
+    margin: 12px auto;
+    background-color: #E6E6E5;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px;
+}
+
+.paymentForm{
+    width: 320px;
+    height:282px;
+    background-color: beige;
+    border-radius: 10px;
+    margin: 30px auto;
+    border: 1px solid #0B1E1D;
+}
+.paymentForm .credit-debit-title{
+      width: 310;
+      height: 50px;
+      /*border: 1px solid #0B1E1D;*/
+      border-radius: 10px 10px 0 0;
+      background-color: #A6D38D;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #0B1E1D;
+}
+
+.credit-debit-title .button-icon {
+    height: 20px;
+    width: 20px;
+    /*background-color: rgb(199, 199, 100);*/
+    background-image: url(images/radio-button.svg);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 4px 4px;
+    margin-left: 8px;
+
+}
+
+.credit-debit-title h4{
+    font-size: 14.5px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+form{
+   background-color:#E6E6E5;
+   height: 180px;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+
+}
+
+form input{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #E6E6E5;
+    margin: 3px 7px;
+    padding: 3px;
+    padding-left: 6px;
+    appearance: none;
+    font-weight: 400;
+    color: #999997;
+    
+}
+
+input[id="cardNum"]{
+    margin-top: 26px;
+}
+
+input[id=text]{
+    width:200px;
+}
+
+input[id=cvvNum]{
+    width: 56px;
+    margin-left: 0px;
+    
+}
+
+.payment-details{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-details h1,p{
+    text-align: center;
+}
+
+.payment-details h1{
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.payment-details p{
+    font-weight: 300;
+}
+
+.payAtEvent-title{
+    width: 310;
+    height: 50px;
+    /*border: 1px solid #0B1E1D;*/
+    border-radius: 0 0 10px 10px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #0B1E1D;
+}
+
+.payAtEvent-title .button-icon{
+    height: 20px;
+    width: 20px;
+    /*background-color: rgb(199, 199, 100);*/
+    background-image: url(images/radio-button.svg);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 4px -19px;
+    margin-left: 8px;
+
+}
+
+.payAtEvent-title h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.payAtEvent-title:hover{
+    cursor: pointer;
+}
+
+.payAndConfirm-btn{
+     margin: 30px 120px;
+}
+
+.payAndConfirm-btn button{
+    background-color:#1D4E4B;
+    border-radius: 5px;
+    border: none;
+    padding:2px 16px;
+    width: 120px;
+}
+
+.payAndConfirm-btn button a{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #F5F5F5 ;
+    text-decoration: none;
+}
+
+.payAndConfirm-btn button:hover{
+    background-color: #5BC3B0;
+    box-shadow: 2px 4px 8px rgb(150, 150, 150) ;
+}
+
+.verticalLine{
+    border-left: 1px solid #0B1E1D;
+    height: 460px;
+    margin: auto 0;
+}
+
+.order-summary{
+    width: 300px;
+    height: 300px;
+    
+    /*background-color: #1D4E4B;*/
+
+}
+
+.order-summary h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+   
+}
+
+.summary-details{
+    width: 300px;
+    margin-top: 50px;
+    
+    
+}
+
+.summary-details hr{
+    background-color: #0B1E1D;
+    width: 300px;
+    margin:0;
+}
+
+.summary-details p{
+    text-align: left;
+}
+

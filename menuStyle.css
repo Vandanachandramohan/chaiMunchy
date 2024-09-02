@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+ font-family: "Fredoka", sans-serif;
+ font-style: normal;
+ 
+}
+
+body{
+    font-family:"Fredoka", sans-serif;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 1500px;
+    margin: 0 auto;
+    /*background-color:aquamarine;*/
+    box-sizing: border-box;
+   
+}
+.banner{
+    width:100%;
+    height: 797px;
+    position: relative;
+    
+}
+
+.banner img{
+    width: 100%;  
+}
+
+/* Header starts */
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #0B1E1D;
+    position: absolute;
+    top: 0;
+    opacity: 85%;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* navbar starts */
+
+.navbar{
+    margin: 0px auto;
+    /*background-color: #0B1E1D;*/
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*position: absolute;
+    top: 0;
+    opacity: 90%;*/
+    
+}
+
+.navbar img{
+    width: 223px;
+    height: 68px;
+}
+.navbar img:hover{
+    cursor: pointer;
+}
+
+.navbar>ul{
+    width: 60%;
+    padding: 0px;
+    list-style: none;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /*background-color: rgb(11, 24, 24);*/
+}
+
+.navbar>ul>li>a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 300;
+}
+.navbar>ul .Menu{
+    text-decoration: underline;
+    text-underline-offset:2.79em;
+    text-decoration-thickness: 0.17em;
+    color:#A6D38D;
+}
+
+
+.navbar>ul>li>a:hover:not(.Menu){   /* hover effect applies to all elements in list except 'home'*/
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset:2.79em;
+    text-decoration-thickness: 0.17em;
+    color:#A6D38D;
+}
+
+.navbar .arrow-icon{
+    width: 23px;
+    height: 22px;
+    background-image: url("images/Group\ 44.svg"); 
+    background-position: -35px -30px;
+    background-size: 34px;                          
+    /*background-color: black;*/
+}
+
+.navbar>ul>li:nth-child(4){
+    /*background-color: green;*/
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar>ul>li:nth-child(4):hover .arrow-icon{
+    /*background-color: green;*/
+    cursor: pointer; 
+    transform: rotate(180deg);   
+    background-position: -43px -30px;
+}
+
+.navbar>ul>li:nth-child(4) .dropdown{
+    width: 178px;
+    /* height: 100px; */
+    position: absolute;
+    background-color: #E6E6E5;
+    top: 36px;
+    left: -24px;
+    display: none;
+    border-top: 5px solid #A6D38D;
+    /*opacity: 0;
+    transition: all 0.5s ease 0.3s;*/
+}
+
+.navbar ul li:nth-child(4):hover .dropdown{
+    display: block;
+    /*opacity: 1;
+    transition: all 0.5s ease 0s;*/
+}
+
+.dropdown ul{
+    padding: 0px;
+}
+
+.dropdown ul li{
+    /* margin-top: 15px; */
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid #d2d2d1;
+    /*background-color: red;*/
+}
+
+.dropdown ul li a{
+    color: #0B1E1D;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.dropdown ul li a:hover{
+    /*text-decoration: underline;
+    text-underline-offset: 0.2em;*/
+    background-color:#A6D38D; 
+    width: 100%;
+    color: #0B1E1D;
+    }
+
+.profile-icon{
+    height: 32px;
+    width: 30px;
+    background-image: url("images/profile-icon.png");
+    background-position: 8px 5px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    position:relative;
+    /*background-color: black;*/
+}
+
+.profile-icon:hover{
+    cursor: pointer;
+}
+
+.profile-icon .dropdown1{
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    background-color: #E6E6E5;
+    border-top: 5px solid #A6D38D;
+    display: none;
+    transition: all 0.5s ease 0.3s;
+    /*opacity: 0;*/
+    /*transition: all 0.5s ease 0.3s;*/
+}
+
+.profile-icon:hover .dropdown1 {
+    display: block;
+   /* opacity: 1;
+    transition: all 0.5s ease 0s;*/
+}
+
+.dropdown1 ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown1 ul li{
+       /* margin-top: 15px; */
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid #d2d2d1;
+    /*background-color: #5E5E5C;*/
+}
+
+.dropdown1 ul li a{
+    color: #0B1E1D;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+   
+}
+
+
+.dropdown1 ul li a:hover{
+         /*text-decoration: underline;
+         text-underline-offset: 0.2em;*/
+    background-color:#A6D38D; 
+    width: 100%;
+    color: #0B1E1D;
+    }
+
+/* Header Ends */
+/* Navbar Ends */
+/*Banner Content strts*/
+
+.banner-content-wrapper{
+    background-image: linear-gradient(to bottom, rgba(166, 211, 141, 23%), rgba(11, 30, 29, 6%));
+    width: 60%;
+    height: 337px;
+    position: absolute;
+    top: 220px;
+    left: 263px;   
+    border-radius: 20px; 
+}
+
+.banner-content-wrapper h1{
+    color: #E6E6E5;
+    text-align: center;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 56px;
+}
+.banner-content-wrapper p{
+    color:#E6E6E5 ;
+    text-align: center;
+    line-height: 23px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.banner-btn-wrapper{
+   
+    height: 50px;
+    width: 50px;
+    /*background-color: #999;*/
+    margin: 0 auto;
+    margin-top: 150px;    
+
+}
+
+.banner-btn-wrapper a .nxt-circle{
+    height: 50px;
+    width: 50px;
+    border-radius:25px;
+    background-color: #E6E6E5
+    /*position: relative;*/
+    /*box-shadow: -1px 3px 4px -1px rgb(72, 72, 72);*/
+}
+
+.nxt-circle .down-arrow-icon{
+    width: 21px;
+    height: 25px;
+    position: absolute;
+    top: 375px;
+    left: 392px; 
+    background-color: #d2d22b;
+    background-image: url("images/Group 44.svg");
+    background-position: 151px 1916px;
+    background-size: 93px;
+}
+.banner-btn-wrapper a :hover{
+    cursor:pointer;
+    
+  }
+.banner-btn-wrapper a :hover .down-arrow-icon{
+      margin-top: 5px;
+      padding-bottom:4px;
+      transition: .2s ease-in;
+}
+
+.toggle-button{
+    width:960px;
+    /*background-color: #A6D38D;*/
+    height: 100px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-button .veg-toggle h4,.toggle-button .non-veg-toggle h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: #0B1E1D;
+} 
+
+.toggle-button .veg-toggle{
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 25px;
+    background: #A5A5A3;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 20px;
+    height: 19px;
+    background: #f5f5f5;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: #107c42;
+  }
+  
+  input:checked + label:after {
+    left:45px; 
+  }
+  
+  label:active:after {
+    width: 25px;
+  }
+  
+  .toggle-button .non-veg-toggle{
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .non-veg-toggle input:checked + label {
+    background: #C33039;
+  }
+  
+.menuList{
+    width:100%;
+    height: 1500px;
+    background-color:#f5f5f5 ;
+    padding-top: 1px;
+    /*position: relative;*/
+   
+}
+.logo-white{
+    width: 502px;
+    height: 480px;
+   /* background-color: #0B1E1D;*/
+    background-image: url("images/Logo_white.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    margin-top: 50px;
+    opacity: 35%;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 700px;
+}
+.logo1-white{
+    width: 275px;
+    height: 390px;
+    /*background-color: #0B1E1D;*/
+    background-image: url("images/Logo_white.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    position: absolute;
+    left: 1060px;
+    top: 1550px;
+    opacity: 35%;
+    transform: rotate(0deg);
+    
+}
+.logo2-white{
+    width: 292px;
+    height: 477px;
+    /* background-color: #0B1E1D; */
+    background-image: url(images/Logo_white.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -208px 2px;
+    position: absolute;
+    left: -4px;
+    top: 1850px;
+    opacity: 35%;
+    transform: rotate(354deg);
+ }
+
+.menuWrapper{
+    position: absolute;
+    /*background-color: #1D4E4B;*/
+    width: 960px;
+    height: 800px;
+    left: 200px;
+}
+.menuSlide{
+    margin:80px auto;
+    width:960px;
+   
+}
+
+.menuSlide ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menuSlide ul li{
+    list-style-type: none;
+}
+
+.menuSlide ul li a{
+    color: #1D4E4B;
+    text-decoration: none;
+    font-size: 22px;
+    /*line-height: 30px;*/
+    font-weight: 500;
+   
+}
+
+.menuSlide hr{
+    height: 3px;
+    background-color: #A5A5A3;
+}
+
+/*#link{
+    position: relative;
+  }
+
+  #link:after {
+    content: '';
+    position: absolute;
+    width: 0; height: 3.3px;
+    display: block;
+    margin-top: 16.5px;
+    right: 0;
+    background: #1D4E4B;
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+  }
+  
+  #link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #1D4E4B;
+  }*/
+
+.menuSlide ul .chai-variety{
+    text-decoration: underline;
+    text-underline-offset:0.95em;
+    text-decoration-thickness: 0.16em;
+    color:#1D4E4B;
+   
+}
+.menuSlide ul li a:hover:not(.chai-variety){   /* hover effect applies to all elements in list except 'chai-variety'*/
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset:0.95em;
+    text-decoration-thickness: 0.16em;
+    color:#1D4E4B;
+    
+    
+}
+
+.chaiMenu{
+    width: 960px;
+    height: 500px;
+   /* background-color: #d2d22b;*/
+   /* position: absolute;
+    top: 1300px;*/
+}
+
+.chaiMenu>h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #A6D38D;
+    margin: 0;
+    padding-left: 8px;
+    margin-top: 80px;
+}
+
+.chaiMenu .seperator{
+   border: none;
+   height: 1px;
+   background-color: #A6D38D;
+    
+}
+
+ .chaiMenu .seperator1 {
+    border-top: 1px dashed #A6D38D;
+    margin: 80px auto;
+    
+}
+
+.menu-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px ;
+    padding-top: 1px;
+    
+}
+.menu-card-details{
+    margin-top: 5px;
+    /*background-color: #E6E6E5;*/
+}
+
+.menu-card-details .veg-icon{
+    width: 30px;
+    height: 30px;
+   /* background-color: #A5A5A3;*/
+    background-image: url(images/veg-icon.png);
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    background-size: 21px;
+
+}
+
+.menu-card-details h4{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    
+}
+
+.menu-card-details p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #5E5E5C;
+    text-align: justify;
+    margin: 30px 0;
+}
+
+.menu-card-details h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.menu-card .food-image{
+    width: 384px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #A5A5A3;
+    background-image: url(images/chamomile.png);
+    background-repeat: no-repeat;
+    background-position: 0px -21px;
+    background-size: 385px;
+    position: relative;
+
+}
+
+.food-image button{
+    position: absolute;
+    left: 165px;
+    top: 234px;
+    width: 58px;
+    background-color:#1D4E4B;
+    border-radius: 5px;
+    padding:7px 12px;
+    border: none;
+    color: #f5f5f5;
+    font-size: 15px;
+    box-shadow: 2px 3px 5px rgb(167, 166, 166);
+}
+
+.food-image button:hover{
+    cursor: pointer;
+    background-color: #58BBA9;
+}
+
+.menu-card .food-image1{
+    width: 384px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #A5A5A3;
+    background-image: url(images/green-tea.jpg);
+    background-repeat: no-repeat;
+    background-position: -1px -86px;
+    background-size: 389px;
+    position: relative;
+
+}
+
+.menu-card .food-image2{
+    width: 384px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #A5A5A3;
+    background-image: url(images/herbal\ tea.png);
+    background-repeat: no-repeat;
+    background-position: 0px -21px;
+    background-size: 385px;
+    position: relative;
+
+}
+.food-image1 button{
+    position: absolute;
+    left: 165px;
+    top: 234px;
+    width: 58px;
+    background-color:#1D4E4B;
+    border-radius: 5px;
+    padding:7px 12px;
+    border: none;
+    color: #f5f5f5;
+    font-size: 15px;
+    box-shadow: 2px 3px 5px rgb(167, 166, 166);
+}
+
+.food-image1 button:hover{
+    cursor: pointer;
+    background-color: #58BBA9;
+}
+
+.food-image2 button{
+    position: absolute;
+    left: 165px;
+    top: 234px;
+    width: 58px;
+    background-color:#1D4E4B;
+    border-radius: 5px;
+    padding:7px 12px;
+    border: none;
+    color: #f5f5f5;
+    font-size: 15px;
+    box-shadow: 2px 3px 5px rgb(167, 166, 166);
+}
+
+.food-image2 button:hover{
+    cursor: pointer;
+    background-color: #58BBA9;
+}
