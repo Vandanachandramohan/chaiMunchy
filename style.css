@@ -947,7 +947,7 @@ body{
     .customer-testimonial-section{
         width: 100%;
         height: 740px;
-        background-color: #A6D38D;
+        /*background-color: #A6D38D;*/
         margin: 32px auto;
         background-image: url("images/background.png");
         /*background-size: 1200px;*/
